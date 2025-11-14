@@ -60,6 +60,8 @@ import exp8 from "./experience/exp8.jpg";
 import exp9 from "./experience/exp9.jpg";
 import exp10 from "./experience/exp10.jpg";
 import exp11 from "./experience/exp11.jpg";
+import exp12 from "./experience/exp12.jpg";
+
 import seaIcon from './seaIcon.svg'
 import menu1 from "../assets/menu/1.png";
 import menu2 from "../assets/menu/2.png";
@@ -128,7 +130,7 @@ const MENU_IMAGES = [
 ];
 
 
-export const experienceImages = [exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11];
+export const experienceImages = [exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11, exp12];
 
 
 export const foodExperienceImagesTop = [food1, food2, food3, food5];
