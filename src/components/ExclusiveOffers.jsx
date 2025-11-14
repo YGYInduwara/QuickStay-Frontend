@@ -6,9 +6,25 @@ const ExclusiveOffers = () => {
   return (
     <div className='flex flex-col items-center px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-30'>
       <div className='flex flex-col md:flex-row items-center justify-between w-full'>
-        <Title align='left' title='Discover the best of Hikkaduwa' subTitle='WhyNot sits at the heart of everything that makes this beach town magical' />
+        <div className="w-full text-left mb-8">
+          <h2 className="font-playfair text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            Discover the{" "}
+            <span className="text-sky-600">
+              best of Hikkaduwa
+            </span>
+          </h2>
+
+          <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed max-w-3xl">
+            WhyNot sits at the heart of everything that makes this beach town magical
+          </p>
+        </div>
+        {/* <Title align='left' title='Discover the best of Hikkaduwa' subTitle='WhyNot sits at the heart of everything that makes this beach town magical' /> */}
         <button
-  className="group flex items-center gap-2 font-medium cursor-pointer max-md:mt-12"
+  className="group flex items-center gap-2 font-medium cursor-pointer max-md:mt-12
+             px-5 py-2.5 rounded-xl
+             bg-white/10 border border-white/30 backdrop-blur-md
+             shadow-[0_8px_25px_rgba(0,0,0,0.15)]
+             hover:bg-white/20 transition-all"
   onClick={() =>
     window.open(
       "https://web.facebook.com/profile.php?id=61580964269684&sk=photos",
@@ -23,6 +39,7 @@ const ExclusiveOffers = () => {
     className="group-hover:translate-x-1 transition-all"
   />
 </button>
+
 
       </div>
 

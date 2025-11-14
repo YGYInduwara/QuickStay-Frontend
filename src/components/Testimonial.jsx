@@ -42,10 +42,24 @@ const Testimonial = () => {
 
   return (
     <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 pt-20 pb-24">
-      <Title
+
+          <h2 className="font-playfair text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            What{" "}
+            <span className="text-sky-600">
+              Our Guest
+            </span>{" "}
+            Say
+          </h2>
+
+          <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed max-w-3xl">
+            WhyNot sits at the heart of everything that makes this beach town magical
+          </p>
+        
+      
+      {/* <Title
         title="What Our Guests Say"
         subTitle="Discover why travelers keep coming back to Why Not – for the food, the vibe, and the beachfront sunsets."
-      />
+      /> */}
 
       <div className="relative w-full mt-12 overflow-hidden">
         {/* Slider track */}

@@ -19,6 +19,7 @@ import AIDealWidget from '../components/AIDealWidget'
     imagesBottom={foodExperienceImagesBottom}
     intervalMs={2000}   // 2 seconds
   />
+
       <ExclusiveOffers />
       <Testimonial />
       <NewsLetter />
