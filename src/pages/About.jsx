@@ -12,7 +12,7 @@ export default function About() {
   return (
     <main className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50">
       {/* Hero */}
-      <section className="w-full max-w-6xl py-24">
+      <section className="w-full max-w-6xl py-32">
         <Title
           title="🌴 ABOUT US"
           subTitle="At WhyNot, we believe in simple pleasures — sunshine, sea breeze, and good company.

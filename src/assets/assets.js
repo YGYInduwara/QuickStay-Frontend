@@ -43,10 +43,11 @@ import totalRevenueIcon from "./totalRevenueIcon.svg";
 import food1 from "./food/3.avif";
 import food2 from "./food/4.avif";
 import food3 from "./food/7.avif";
-
+import food5 from "./food/5.avif";
 import dine1 from "./food/9.avif";
 import dine2 from "./food/11.avif";
 import dine3 from "./food/12.avif";
+import dine4 from "./food/10.avif";
 // ----- Experience gallery images -----
 import exp1 from "./experience/exp1.jpg";
 import exp2 from "./experience/exp2.jpg";
@@ -128,8 +129,8 @@ const MENU_IMAGES = [
 export const experienceImages = [exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11];
 
 
-export const foodExperienceImagesTop = [food1, food2, food3];
-export const foodExperienceImagesBottom = [dine1, dine2, dine3];
+export const foodExperienceImagesTop = [food1, food2, food3, food5];
+export const foodExperienceImagesBottom = [dine1, dine2, dine3, dine4];
 
 
 

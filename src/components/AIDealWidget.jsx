@@ -106,7 +106,15 @@ const AIDealWidget = () => {
                 Close
               </button>
 
-              <button className="text-sm px-3 py-2 rounded-md bg-black text-white hover:bg-gray-900">
+              <button className="text-sm px-3 py-2 rounded-md bg-black text-white hover:bg-gray-900"
+              onClick={() => {
+          const ownerPhone = "+94777336173";
+          const url = `https://wa.me/${ownerPhone.replace(/\D/g, "")}?text=${encodeURIComponent(
+            "Hello! I'd like to check Offers and Discounts in Why Not Hikka Restaurant."
+          )}`;
+          window.open(url, "_blank");
+        }}
+              >
                 Ask on WhatsApp
               </button>
             </div>

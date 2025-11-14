@@ -44,13 +44,15 @@ export default function FoodExperienceSection({
           subTitle={
             <>
               Fresh. Local. Delicious. <br />
-              Welcome to WhyNot Seafood Restaurant, where every meal comes with a sea breeze. <br />
-              Our menu celebrates the ocean’s bounty with daily catches and island-inspired dishes prepared fresh by our chefs.
+              Welcome to WhyNot Seafood Restaurant, where every meal comes with a
+              sea breeze. <br />
+              Our menu celebrates the ocean’s bounty with daily catches and
+              island-inspired dishes prepared fresh by our chefs.
             </>
           }
         />
 
-        {/* Optional small pills under title to add life */}
+        {/* Small feature pills under title */}
         <div className="flex flex-wrap justify-center gap-2 mt-4 text-xs md:text-sm">
           <span className="px-3 py-1 rounded-full bg-white/80 backdrop-blur border border-white/60 text-gray-700">
             🐟 Daily fresh catch
@@ -69,50 +71,61 @@ export default function FoodExperienceSection({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="text-gray-600 leading-7">
               <p>
-                Get ready to eat like a local! From creamy curries and spicy sambols
-                to fresh tropical fruits, there’s always something new to try.
-                Whether you’re fueling up after a surf session or just here for the
-                food, you’re in for a delicious ride.
+                Get ready to eat like a local! From creamy curries and spicy
+                sambols to fresh tropical fruits, there’s always something new to
+                try. Whether you’re fueling up after a surf session or just here
+                for the food, you’re in for a delicious ride.
               </p>
             </div>
 
-            <div className="relative h-[220px] md:h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-lg bg-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
-              {imagesTop.map((src, i) => (
-                <img
-                  key={src + i}
-                  src={src}
-                  alt="Restaurant dish"
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-                    i === topIdx ? "opacity-100" : "opacity-0"
-                  }`}
-                  loading="lazy"
-                />
-              ))}
+            {/* Image with glow + slightly smaller height */}
+            <div className="relative group">
+              {/* glow halo */}
+              <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-gradient-to-br from-cyan-200/50 via-sky-200/40 to-emerald-200/50 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative h-[200px] md:h-[260px] lg:h-[300px] rounded-2xl overflow-hidden shadow-lg bg-gray-100 transform group-hover:scale-[1.02] transition-transform duration-500">
+                {imagesTop.map((src, i) => (
+                  <img
+                    key={src + i}
+                    src={src}
+                    alt="Restaurant dish"
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                      i === topIdx ? "opacity-100" : "opacity-0"
+                    }`}
+                    loading="lazy"
+                  />
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Row 2: image left, text right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div className="relative h-[260px] md:h-[340px] lg:h-[420px] rounded-2xl overflow-hidden shadow-lg bg-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
-              {imagesBottom.map((src, i) => (
-                <img
-                  key={src + i}
-                  src={src}
-                  alt="Dining vibes"
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-                    i === bottomIdx ? "opacity-100" : "opacity-0"
-                  }`}
-                  loading="lazy"
-                />
-              ))}
+            {/* Image with warm glow */}
+            <div className="relative group">
+              <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-gradient-to-tr from-amber-200/50 via-rose-200/40 to-orange-200/50 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative h-[230px] md:h-[300px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg bg-gray-100 transform group-hover:scale-[1.02] transition-transform duration-500">
+                {imagesBottom.map((src, i) => (
+                  <img
+                    key={src + i}
+                    src={src}
+                    alt="Dining vibes"
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                      i === bottomIdx ? "opacity-100" : "opacity-0"
+                    }`}
+                    loading="lazy"
+                  />
+                ))}
+              </div>
             </div>
 
             <div className="text-gray-600 leading-7">
               <p>
                 Craving something beyond rice and curry? Why Not restaurant serves
-                international favorites, fresh seafood, and comfort food. Our café is
-                your spot for smoothie bowls, proper coffee, and tropical drinks that
-                taste like vacation in a cup.
+                international favorites, fresh seafood, and comfort food. Our café
+                is your spot for smoothie bowls, proper coffee, and tropical drinks
+                that taste like vacation in a cup.
               </p>
             </div>
           </div>

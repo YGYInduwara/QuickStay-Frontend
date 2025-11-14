@@ -9,7 +9,7 @@ export default function Experience() {
 
   return (
     <main className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50">
-      <section className="w-full max-w-6xl py-24">
+      <section className="w-full max-w-6xl py-32">
         <Title
           title="📸 GALLERY"
           subTitle="Include a mix of real photos — your rooms, restaurant, food, sea view, and sunsets. Use bright tropical colours — turquoise, coral, and gold — to match your beachfront vibe."
