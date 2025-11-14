@@ -10,7 +10,7 @@ const ExclusiveOffers = () => {
           <h2 className="font-playfair text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             Discover the{" "}
             <span className="text-sky-600">
-              best of Hikkaduwa
+              Best of Hikkaduwa
             </span>
           </h2>
 

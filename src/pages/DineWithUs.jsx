@@ -275,6 +275,7 @@ export default function DineWithUs() {
         />
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-white px-6">
+          
           <h1 className="font-playfair text-3xl md:text-5xl tracking-wide">Dine With Us</h1>
           <p className="mt-3 text-white/85 max-w-2xl text-center">
             Fresh local ingredients, oceanfront charm, and plates made with love. Book a table and taste the coast.
