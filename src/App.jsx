@@ -13,6 +13,7 @@ import AddRoom from './pages/hotelOwner/AddRoom';
 import ListRoom from './pages/hotelOwner/ListRoom';
 import About from './pages/About';
 import Experience from './pages/Experience';
+import DineWithUs from './pages/DineWithUs';
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/rooms' element={<AllRooms/>} />
         <Route path='/rooms/:id' element={<RoomDetails/>} />
         <Route path='/my-bookings' element={<MyBookings/>} />
+        <Route path="/dine-with-us" element={<DineWithUs/>} />
         <Route path='/owner' element={<Layout/>}>
             <Route index element={<Dashboard/>} />
             <Route path="add-room" element={<AddRoom/>} />

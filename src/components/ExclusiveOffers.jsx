@@ -6,7 +6,7 @@ const ExclusiveOffers = () => {
   return (
     <div className='flex flex-col items-center px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-30'>
       <div className='flex flex-col md:flex-row items-center justify-between w-full'>
-        <Title align='left' title='Explore Down South: Curated Adventures' subTitle='Enhance your beachfront stay with a personalized experience. Choose from our hand picked sea activities and local travel tours.' />
+        <Title align='left' title='Discover the best of Hikkaduwa' subTitle='WhyNot sits at the heart of everything that makes this beach town magical' />
         <button
   className="group flex items-center gap-2 font-medium cursor-pointer max-md:mt-12"
   onClick={() =>

@@ -12,10 +12,11 @@ export default function About() {
   return (
     <main className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50">
       {/* Hero */}
-      <section className="w-full max-w-6xl py-16">
+      <section className="w-full max-w-6xl py-24">
         <Title
-          title="About Why Not"
-          subTitle="Down South’s cozy beachfront stay—steps from the sand, next to our 'Why Not' restaurant, and minutes from everything you love about Hikkaduwa."
+          title="🌴 ABOUT US"
+          subTitle="At WhyNot, we believe in simple pleasures — sunshine, sea breeze, and good company.
+"
         />
       </section>
 
@@ -24,11 +25,9 @@ export default function About() {
         <div className="text-gray-600 leading-7">
           <h3 className="font-playfair text-2xl md:text-3xl mb-3">Our Story</h3>
           <p className="mb-4">
-            We started Why Not with a simple idea: create a place we would love
-            to stay—ocean at the doorstep, friendly people, great food, and a
-            laid-back vibe. Today, we host travelers from all over the world,
-            offering four thoughtfully designed rooms named after the sea:
-            Shell, Coral, Pearl, and Sand.
+            We’re a locally run guest house and seafood restaurant built around warmth, comfort, and connection.
+Whether you’re a surfer chasing waves, a couple seeking a romantic getaway, or travellers exploring Sri Lanka’s south coast, WhyNot is your place to rest, relax, and reconnect with the ocean.
+“Perfect location right on the beach. The restaurant is such a nice place to chill, and the staff are so friendly.” — Guest review on Booking.com
           </p>
           <p>
             Whether you&apos;re here to surf, slow down, or spend time with the

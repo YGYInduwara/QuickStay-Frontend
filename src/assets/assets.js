@@ -56,6 +56,71 @@ import exp8 from "./experience/exp8.jpg";
 import exp9 from "./experience/exp9.jpg";
 import exp10 from "./experience/exp10.jpg";
 import exp11 from "./experience/exp11.jpg";
+import seaIcon from './seaIcon.svg'
+import menu1 from "../assets/menu/1.png";
+import menu2 from "../assets/menu/2.png";
+import menu3 from "../assets/menu/3.png";
+import menu4 from "../assets/menu/4.png";
+import menu5 from "../assets/menu/5.png";
+import menu6 from "../assets/menu/6.png";
+import menu7 from "../assets/menu/7.png";
+import menu8 from "../assets/menu/8.png";
+import menu9 from "../assets/menu/9.png";
+import menu10 from "../assets/menu/10.png";
+
+import menu11 from "../assets/menu/11.png";
+import menu12 from "../assets/menu/12.png";
+import menu13 from "../assets/menu/13.png";
+import menu14 from "../assets/menu/14.png";
+import menu15 from "../assets/menu/15.png";
+import menu16 from "../assets/menu/16.png";
+import menu17 from "../assets/menu/17.png";
+import menu18 from "../assets/menu/18.png";
+import menu19 from "../assets/menu/19.png";
+import menu20 from "../assets/menu/20.png";
+
+import menu21 from "../assets/menu/21.png";
+import menu22 from "../assets/menu/22.png";
+import menu23 from "../assets/menu/23.png";
+import menu24 from "../assets/menu/24.png";
+import menu25 from "../assets/menu/25.png";
+import menu26 from "../assets/menu/26.png";
+import menu27 from "../assets/menu/27.png";
+import menu28 from "../assets/menu/28.png";
+import menu29 from "../assets/menu/29.png";
+import menu30 from "../assets/menu/30.png";
+
+import menu31 from "../assets/menu/31.png";
+import menu32 from "../assets/menu/32.png";
+import menu33 from "../assets/menu/33.png";
+import menu34 from "../assets/menu/34.png";
+import menu35 from "../assets/menu/35.png";
+import menu36 from "../assets/menu/36.png";
+import menu37 from "../assets/menu/37.png";
+import menu38 from "../assets/menu/38.png";
+import menu39 from "../assets/menu/39.png";
+import menu40 from "../assets/menu/40.png";
+
+import menu41 from "../assets/menu/41.png";
+import menu42 from "../assets/menu/42.png";
+import menu43 from "../assets/menu/43.png";
+import menu44 from "../assets/menu/44.png";
+import menu45 from "../assets/menu/45.png";
+import menu46 from "../assets/menu/46.png";
+
+const MENU_IMAGES = [
+  menu1, menu2, menu3, menu4, menu5,
+  menu6, menu7, menu8, menu9, menu10,
+  menu11, menu12, menu13, menu14, menu15,
+  menu16, menu17, menu18, menu19, menu20,
+  menu21, menu22, menu23, menu24, menu25,
+  menu26, menu27, menu28, menu29, menu30,
+  menu31, menu32, menu33, menu34, menu35,
+  menu36, menu37, menu38, menu39, menu40,
+  menu41, menu42, menu43, menu44, menu45,
+  menu46,
+];
+
 
 export const experienceImages = [exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11];
 
@@ -67,6 +132,7 @@ export const foodExperienceImagesBottom = [dine1, dine2, dine3];
 
 export const assets = {
     logo,
+    seaIcon,
     searchIcon,
     userIcon,
     calenderIcon,
@@ -112,20 +178,32 @@ export const exclusiveOffers = [
     { _id: 1, title: "Ocean Explorer", description: "Discover the vibrant coral reefs and marine life.", priceOff: 25, expiryDate: "Feb 31", image: exclusiveOfferCardImg1 },
     { _id: 2, title: "Fisherman's Catch", description: "Join local fishermen and try your luck at an exciting morning of fishing", priceOff: 20, expiryDate: "Dec 20", image: exclusiveOfferCardImg2 },
     { _id: 3, title: "The Culture Trip", description: "Take a break from the beach to explore the nearby historic UNESCO site.", priceOff: 30, expiryDate: "Jan 25", image: exclusiveOfferCardImg3 },
-]
+    { _id: 4, title: "Surfing at the Narigama Beach", description: "Discover the vibrant coral reefs and marine life.", priceOff: 25, expiryDate: "", image: exclusiveOfferCardImg1 },
+    { _id: 5, title: "Sunset walks & beach cafés", description: "", priceOff: 20, expiryDate: "", image: exclusiveOfferCardImg2 },
+    { _id: 6, title: "Local markets and cycling tours", description: "", priceOff: 30, expiryDate: "", image: exclusiveOfferCardImg3 },
+]   
 
 // Testimonials Dummy Data
 export const testimonials = [
-    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that Why Not provides." },
-    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "Why Not Restaurant and Guest House exceeded my expectations. The booking process was seamless, and the rooms were absolutely top-notch. Highly recommended!" },
-    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best beach accommodations through Why Not. Their foods are never disappoint!" }
+    { id: 12, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that Why Not provides." },
+    { id: 11, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "Why Not Restaurant and Guest House exceeded my expectations. The booking process was seamless, and the rooms were absolutely top-notch. Highly recommended!" },
+    { id: 10, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best beach accommodations through Why Not. Their foods are never disappoint!" },
+    { id: 1, name: "Justin Marley", address: "Cardiff, United Kingdom", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/ff/05/85/caption.jpg?w=300&h=-1&s=1", rating: 5, review: "The meal arrives after 10 mins, so very prompt. Served today are curried okra, spicy potatoes, egg fried rice, daal and some popadoms. I also gave a mixed fruit smoothie and a bottle of ice cold water. Staff are friendly, accommodating and attentive. Very affordable and tasted great." },
+    { id: 2, name: "FoMa89", address: "St. Gallen, Switzerland", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/2d/f7/d7/foma89.jpg?w=100&h=-1&s=1", rating: 4, review: "Really nice spot to chill at the sea and to surf. Good service also to rent a board." },
+    { id: 3, name: "LightPacker168370", address: "Seoul, South Korea", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e9/bb/default-avatar-2020-65.jpg?w=100&h=-1&s=1", rating: 5, review: "The best and og place in Hikka. The most amazing people and food with a great atmosphere and the beach bungalow is a dream location! Himali and Sumith thank you for always looking after us." },
+    { id: 4, name: "Luka Erickson", address: "London, United Kingdom", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/a7/fc/18/climber629852.jpg?w=100&h=-1&s=1", rating: 4, review: "This restaurant is good before/after surfing or while watching the surfing at Narigama beach. You can rent a board right next door at the Mountain Wave surf shop. Service is a little slow but this is typical of a lot of restaurants in Sri Lanka so as long as you embrace the laid back pace it's ok! The restaurant is very family friendly - we visiting with our 10 month old baby and they were very welcoming and helpful." },
+    { id: 5, name: "Paul N", address: "Thetford, United Kingdom", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e2/4a/default-avatar-2020-42.jpg?w=300&h=-1&s=1", rating: 5, review: "I have been staying in Hikkaduwa for 3 weeks, best place to eat is Why Not resteraunt on the beach. Food is amazing and a very reasonable price, the staff are friendly and helpful. The manager is a cool dude and will do anything for you, place is relaxing, comfortable and a great view of excellent surfing. Try the deviled pork, absolutely GORGEOUS." },
+    { id: 6, name: "Katja K", address: "Berlin, Germany", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e7/99/default-avatar-2020-57.jpg?w=100&h=-1&s=1", rating: 5, review: "We enjoyed already twice the food here. It's cheap, the service is great and the food is delicious. We can recommend the deviled calamari. Happy to come here again." },
+    { id: 7, name: "Soumya S", address: "Varanasi, Uttar Pradesh, India", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/fb/93/af/buddhavaranasi.jpg?w=100&h=-1&s=1", rating: 5, review: "I tried Shark here and it was just superb! Nice shack facing the beach, awesome view. Wooden furniture facing the sea is awesome place to eat and spend good time." },
+    { id: 8, name: "lizabella2013", address: "Hikkaduwa, Sri Lanka", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c9/fe/3b/veggie-burger-fresh-lime.jpg?w=300&h=-1&s=1", rating: 5, review: "'Why Not' just in front of the beachbreak-surfspot is a great place to have s.th. to eat or just a sunset beer and watch the surf.Prices a moderate, food is good & the owners & stuff are lovely." },
+    { id: 9, name: "David B", address: "quebec, France", image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f0/48/default-avatar-2020-15.jpg?w=100&h=-1&s=1", rating: 5, review: "Good food, friendly service and clean well priced accommodation.Recommend for surfers, lessons and surf board rental." }
 ];
 
 // Facility Icon
 export const facilityIcons = {
     "Free WiFi": assets.freeWifiIcon,
     "Free Breakfast": assets.freeBreakfastIcon,
-    "Room Service": assets.roomServiceIcon,
+    "Room Service": assets.roomServiceIconReally,
     "Beach View": assets.seaIcon,
     "Beach Access": assets.poolIcon,
 };
@@ -172,6 +250,7 @@ export const roomsDummyData = [
         "_id": "67f7647c197ac559e4089b96",
         "hotel": hotelDummyData,
         "name": "Sand Room",
+        "slug": "sand",
         "roomType": "Double Room",
         "pricePerNight": 50,
         "amenities": ["Room Service", "Beach View", "Beach Access"],
@@ -182,22 +261,10 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76452197ac559e4089b8e",
-        "hotel": hotelDummyData,
-        "name": "Shell Room",
-        "roomType": "Single Room",
-        "pricePerNight": 50,
-        "amenities": ["Room Service", "Beach View", "Beach Access"],
-        "images": [roomImg2, roomImg3, roomImg4, roomImg1],
-        "isAvailable": true,
-        "createdAt": "2025-04-10T06:25:22.593Z",
-        "updatedAt": "2025-04-10T06:25:22.593Z",
-        "__v": 0
-    },
-    {
         "_id": "67f76406197ac559e4089b82",
         "hotel": hotelDummyData,
         "name": "Coral Room",
+        "slug": "coral",
         "roomType": "Double Room",
         "pricePerNight": 50,
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
@@ -211,6 +278,7 @@ export const roomsDummyData = [
         "_id": "67f763d8197ac559e4089b7a",
         "hotel": hotelDummyData,
         "name": "Pearl Room",
+        "slug": "pearl",
         "roomType": "Single Room",
         "pricePerNight": 50,
         "amenities": ["Free WiFi", "Room Service", "Beach Access"],

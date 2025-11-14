@@ -1,12 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import Title from "./Title"; // ⬅ uses the same Title component as other sections
+import Title from "./Title";
 
-/**
- * props:
- *  - imagesTop: string[]
- *  - imagesBottom: string[]
- *  - intervalMs: number (default 2000ms)
- */
 export default function FoodExperienceSection({
   imagesTop = [],
   imagesBottom = [],
@@ -37,65 +31,90 @@ export default function FoodExperienceSection({
   }, [imagesTop.length, imagesBottom.length, intervalMs]);
 
   return (
-    // ⬇︎ same wrapper look/feel as FeaturedDestination: bg, px, py, centered
-    <section className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20">
-      {/* Title matches old section style */}
-      <Title
-        title="The Food Experience at the Beach"
-        subTitle="Eat like a local. Our daily spreads rotate through authentic Sri Lankan flavors and international comforts perfect after a surf session or just to chill by the beach."
-      />
+    <section className="relative flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20 overflow-hidden">
+      {/* --- Animated background blobs --- */}
+      <div className="pointer-events-none absolute -top-32 -left-20 h-72 w-72 rounded-full bg-gradient-to-br from-cyan-400/40 via-sky-500/30 to-emerald-300/30 blur-3xl opacity-70 animate-blob" />
+      <div className="pointer-events-none absolute -bottom-40 right-0 h-80 w-80 rounded-full bg-gradient-to-tr from-rose-400/40 via-orange-400/30 to-amber-300/30 blur-3xl opacity-70 animate-blob-slow" />
+      <div className="pointer-events-none absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-64 w-64 rounded-full bg-gradient-to-tr from-white/0 via-white/40 to-white/0 blur-3xl opacity-40" />
 
-      {/* content container width aligned with other sections */}
-      <div className="w-full max-w-6xl mt-14 space-y-12">
-        {/* Row 1: text left, image right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="text-gray-600 leading-7">
-            <p>
-              Get ready to eat like a local! From creamy curries and spicy sambols
-              to fresh tropical fruits, there’s always something new to try.
-              Whether you’re fueling up after a surf session or just here for the
-              food, you’re in for a delicious ride.
-            </p>
-          </div>
+      {/* Content wrapper (above blobs) */}
+      <div className="relative z-10 w-full max-w-6xl">
+        <Title
+          title="🐚 RESTAURANT"
+          subTitle={
+            <>
+              Fresh. Local. Delicious. <br />
+              Welcome to WhyNot Seafood Restaurant, where every meal comes with a sea breeze. <br />
+              Our menu celebrates the ocean’s bounty with daily catches and island-inspired dishes prepared fresh by our chefs.
+            </>
+          }
+        />
 
-          <div className="relative h-[220px] md:h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-lg bg-gray-100">
-            {imagesTop.map((src, i) => (
-              <img
-                key={src + i}
-                src={src}
-                alt="Food experience"
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-                  i === topIdx ? "opacity-100" : "opacity-0"
-                }`}
-                loading="lazy"
-              />
-            ))}
-          </div>
+        {/* Optional small pills under title to add life */}
+        <div className="flex flex-wrap justify-center gap-2 mt-4 text-xs md:text-sm">
+          <span className="px-3 py-1 rounded-full bg-white/80 backdrop-blur border border-white/60 text-gray-700">
+            🐟 Daily fresh catch
+          </span>
+          <span className="px-3 py-1 rounded-full bg-white/80 backdrop-blur border border-white/60 text-gray-700">
+            🌶️ Sri Lankan flavours
+          </span>
+          <span className="px-3 py-1 rounded-full bg-white/80 backdrop-blur border border-white/60 text-gray-700">
+            🌊 Beachfront dining
+          </span>
         </div>
 
-        {/* Row 2: image left, text right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="relative h-[260px] md:h-[340px] lg:h-[420px] rounded-2xl overflow-hidden shadow-lg bg-gray-100">
-            {imagesBottom.map((src, i) => (
-              <img
-                key={src + i}
-                src={src}
-                alt="Dining vibes"
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-                  i === bottomIdx ? "opacity-100" : "opacity-0"
-                }`}
-                loading="lazy"
-              />
-            ))}
+        {/* content container */}
+        <div className="mt-14 space-y-12">
+          {/* Row 1: text left, image right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="text-gray-600 leading-7">
+              <p>
+                Get ready to eat like a local! From creamy curries and spicy sambols
+                to fresh tropical fruits, there’s always something new to try.
+                Whether you’re fueling up after a surf session or just here for the
+                food, you’re in for a delicious ride.
+              </p>
+            </div>
+
+            <div className="relative h-[220px] md:h-[280px] lg:h-[320px] rounded-2xl overflow-hidden shadow-lg bg-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
+              {imagesTop.map((src, i) => (
+                <img
+                  key={src + i}
+                  src={src}
+                  alt="Restaurant dish"
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                    i === topIdx ? "opacity-100" : "opacity-0"
+                  }`}
+                  loading="lazy"
+                />
+              ))}
+            </div>
           </div>
 
-          <div className="text-gray-600 leading-7">
-            <p>
-              Craving something beyond rice and curry? Why Not restaurant serves
-              international favorites, fresh seafood, and comfort food. Our café is
-              your spot for smoothie bowls, proper coffee, and tropical drinks that
-              taste like vacation in a cup.
-            </p>
+          {/* Row 2: image left, text right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="relative h-[260px] md:h-[340px] lg:h-[420px] rounded-2xl overflow-hidden shadow-lg bg-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
+              {imagesBottom.map((src, i) => (
+                <img
+                  key={src + i}
+                  src={src}
+                  alt="Dining vibes"
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                    i === bottomIdx ? "opacity-100" : "opacity-0"
+                  }`}
+                  loading="lazy"
+                />
+              ))}
+            </div>
+
+            <div className="text-gray-600 leading-7">
+              <p>
+                Craving something beyond rice and curry? Why Not restaurant serves
+                international favorites, fresh seafood, and comfort food. Our café is
+                your spot for smoothie bowls, proper coffee, and tropical drinks that
+                taste like vacation in a cup.
+              </p>
+            </div>
           </div>
         </div>
       </div>

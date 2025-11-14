@@ -7,6 +7,7 @@ import NewsLetter from '../components/NewsLetter'
 
 import FoodExperienceSection from '../components/FoodExperienceSection';
 import { foodExperienceImagesTop, foodExperienceImagesBottom } from '../assets/assets';
+import AIDealWidget from '../components/AIDealWidget'
   const Home = () => {
 
   return (
@@ -21,6 +22,7 @@ import { foodExperienceImagesTop, foodExperienceImagesBottom } from '../assets/a
       <ExclusiveOffers />
       <Testimonial />
       <NewsLetter />
+      <AIDealWidget />
     </>
   )
 }
