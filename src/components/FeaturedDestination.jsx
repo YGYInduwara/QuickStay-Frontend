@@ -59,8 +59,20 @@ const FeaturedDestination = () => {
   return (
     <section className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20">
       {/* Title + subtitle (sky blue) */}
-      
-      <h2 className="font-playfair text-3xl md:text-5xl font-extrabold text-sky-600 text-center leading-tight">
+          <h2 className="font-playfair text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            <span className="text-sky-600">
+              Accommodation
+            </span>
+            {''} Options
+          </h2>
+
+          <p className="mt-4 text-gray-600 text-base text-center md:text-lg leading-relaxed max-w-3xl">
+            Choose between our shared dorms for a social vibe or private rooms for
+        added comfort and privacy. All options are just steps from the waves and
+        designed for relaxation after a day in the surf.
+          </p>
+
+      {/* <h2 className="font-playfair text-3xl md:text-5xl font-extrabold text-sky-600 text-center leading-tight">
         Accommodation Options
       </h2>
 
@@ -68,7 +80,7 @@ const FeaturedDestination = () => {
         Choose between our shared dorms for a social vibe or private rooms for
         added comfort and privacy. All options are just steps from the waves and
         designed for relaxation after a day in the surf.
-      </p>
+      </p> */}
 
 
       {/* Big glassy cards container */}
