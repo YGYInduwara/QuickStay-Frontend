@@ -31,6 +31,9 @@ import regImage from './regImage.png'
 import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.png";
 import exclusiveOfferCardImg2 from "./exclusiveOfferCardImg2.png";
 import exclusiveOfferCardImg3 from "./exclusiveOfferCardImg3.png";
+import exclusiveOfferCardImg4 from "./exclusiveOfferCardImg4.png";
+import exclusiveOfferCardImg5 from "./exclusiveOfferCardImg5.png";
+import exclusiveOfferCardImg6 from "./exclusiveOfferCardImg6.png";
 import addIcon from "./addIcon.svg";
 import dashboardIcon from "./dashboardIcon.svg";
 import listIcon from "./listIcon.svg";
@@ -178,9 +181,9 @@ export const exclusiveOffers = [
     { _id: 1, title: "Ocean Explorer", description: "Discover the vibrant coral reefs and marine life.", priceOff: 25, expiryDate: "Feb 31", image: exclusiveOfferCardImg1 },
     { _id: 2, title: "Fisherman's Catch", description: "Join local fishermen and try your luck at an exciting morning of fishing", priceOff: 20, expiryDate: "Dec 20", image: exclusiveOfferCardImg2 },
     { _id: 3, title: "The Culture Trip", description: "Take a break from the beach to explore the nearby historic UNESCO site.", priceOff: 30, expiryDate: "Jan 25", image: exclusiveOfferCardImg3 },
-    { _id: 4, title: "Surfing at the Narigama Beach", description: "Discover the vibrant coral reefs and marine life.", priceOff: 25, expiryDate: "", image: exclusiveOfferCardImg1 },
-    { _id: 5, title: "Sunset walks & beach cafés", description: "", priceOff: 20, expiryDate: "", image: exclusiveOfferCardImg2 },
-    { _id: 6, title: "Local markets and cycling tours", description: "", priceOff: 30, expiryDate: "", image: exclusiveOfferCardImg3 },
+    { _id: 4, title: "Surfing at the Narigama Beach", description: "Discover the vibrant coral reefs and marine life.", priceOff: 25, expiryDate: "", image: exclusiveOfferCardImg4 },
+    { _id: 5, title: "Sunset walks & beach cafés", description: "", priceOff: 20, expiryDate: "", image: exclusiveOfferCardImg5 },
+    { _id: 6, title: "Local markets and cycling tours", description: "", priceOff: 30, expiryDate: "", image: exclusiveOfferCardImg6 },
 ]   
 
 // Testimonials Dummy Data
