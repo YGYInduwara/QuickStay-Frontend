@@ -118,7 +118,7 @@ Please confirm availability.`;
           window.open(url, "_blank");
         }}
       >
-        Check Availability on WhatsApp
+        Check Availability
       </button>
 
     </div>
