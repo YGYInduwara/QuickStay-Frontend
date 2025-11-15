@@ -274,7 +274,7 @@ export const roomsDummyData = [
         "name": "Coral Room",
         "slug": "coral",
         "roomType": "Double Room",
-        "pricePerNight": 5,
+        "pricePerNight": 17,
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
         "images": [roomImg3, roomImg4, roomImg1, roomImg2],
         "isAvailable": true,
